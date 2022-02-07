@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# pylint: disable=unused-import
 
 import time
 from RFM69 import Radio, FREQ_433MHZ
@@ -16,14 +15,13 @@ print ("Starting transmission program")
 # You should adjust them to whatever matches your radio
 with Radio(FREQ_433MHZ, node_id, network_id, isHighPower=True, verbose=False, interruptPin=18, resetPin=22, spiDevice=0, autoAcknowledge=False) as radio:
     print ("Starting sending loop...")
+
     radio.calibrate_radio()
     radio.set_power_level(100)
-
     radio.set_frequency_in_kHz(434000000)
 
     while True:
         number += 1
 
-        # After 1 second send a message
         print ("Sending " + str(number) + " @ " + time.strftime("%H:%M:%S"))
         radio.send(recipient_id, "TEST " + str(number))

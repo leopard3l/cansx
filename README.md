@@ -1,2 +1,2 @@
 # cansx
-Cansat project from the team cansx from school INDA 2022
+Cansat project from the great team cansx from school INDA 2022

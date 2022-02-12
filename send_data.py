@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import time
+
 from RFM69 import Radio, FREQ_433MHZ
 
 node_id = 1
@@ -18,7 +19,7 @@ with Radio(FREQ_433MHZ, node_id, network_id, isHighPower=True, verbose=False, in
 
     radio.calibrate_radio()
     radio.set_power_level(100)
-    radio.set_frequency_in_kHz(434000000)
+    #radio.set_frequency_in_kHz(434000000)
 
     while True:
         number += 1

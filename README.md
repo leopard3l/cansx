@@ -10,7 +10,9 @@ Password = cansax22
 Le programme se lance automatiquement au démarrage du Raspberry
 
 Editer le programme:
+```
 nano /home/cansx/cansx/cansx.py
+```
 
 Les photos sont dans 
 /home/cansx/cansx/pictures
@@ -22,7 +24,9 @@ Format des données:
 time,temp,pressure,altitude,latitude,longitude
 
 Voir les logs défiler:
+```
 sudo journalctl -u cansx -f
+```
 
 Gestion du service cansx:
 ```

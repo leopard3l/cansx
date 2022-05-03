@@ -25,9 +25,11 @@ Voir les logs défiler:
 sudo journalctl -u cansx -f
 
 Gestion du service cansx:
+```
 sudo systemctl status cansx.service
 sudo systemctl stop cansx.service
 sudo systemctl start cansx.service
+```
 
 # Ground station
 
@@ -37,8 +39,10 @@ Username = grounds
 Password = grounds
 
 Lancer le programme:
-cd cansx 
+```
+cd cansx
 python3 -u receive_data.py
+```
 
 Les données sont dans
 /home/grounds/cansx/database.csv

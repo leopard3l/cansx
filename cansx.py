@@ -76,7 +76,7 @@ def take_picture(lastPictureTime):
     rocketIsLaunched = (currentAltitude - initialAltitude >= altitudeDiffBeforePictures)
     #print("current altitude=" + str(currentAltitude))
     #print("initial altitude=" + str(initialAltitude))
-    #GPRMCprint("secondsSinceLastPicture=" + str(secondsSinceLastPicture))
+    #print("secondsSinceLastPicture=" + str(secondsSinceLastPicture))
     #print("rocketIsLaunched=" + str(rocketIsLaunched))
     if (rocketIsLaunched and (secondsSinceLastPicture > picturesSecondsInterval)):
         print("Taking picture...")

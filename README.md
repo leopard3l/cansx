@@ -1,7 +1,6 @@
-# cansx
 Cansat project from the great team cansx from school INDA 2022
 
-cansat
+# Cansat
 
 ssh cansx@cansx.local
 
@@ -30,8 +29,7 @@ sudo systemctl status cansx.service
 sudo systemctl stop cansx.service
 sudo systemctl start cansx.service
 
-
-Ground station
+# Ground station
 
 ssh grounds@grounds.local
 

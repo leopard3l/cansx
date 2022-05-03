@@ -7,6 +7,14 @@ ssh cansx@cansx.local
 Username = cansax
 Password = cansax22
 
+Configurer le WIFI
+
+```
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+```
+
+Plus d'infos sur la config WiFi [ICI](https://raspberrypihq.com/how-to-connect-your-raspberry-pi-to-wifi)
+
 Le programme se lance automatiquement au démarrage du Raspberry
 
 Editer le programme:

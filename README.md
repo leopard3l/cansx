@@ -21,7 +21,7 @@ Les données sont dans
 Format des données:
 time,temp,pressure,altitude,latitude,longitude
 
-Voir les logs défiler
+Voir les logs défiler:
 sudo journalctl -u cansx -f
 
 Gestion du service cansx:
